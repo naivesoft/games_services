@@ -31,4 +31,16 @@ class Player {
         result.error(PluginError.FailedToGetPlayerName.errorCode(), it.localizedMessage, null)
       }
   }
+
+  fun getPlayerAvatar(activity: Activity?, result: MethodChannel.Result) {
+    activity ?: return
+    val lastSignedInAccount = GoogleSignIn.getLastSignedInAccount(activity) ?: return
+    Games.getPlayersClient(activity, lastSignedInAccount)
+      .currentPlayer
+      .addOnSuccessListener { player ->
+        result.success(player.hiResImageUri)
+      }.addOnFailureListener {
+        result.error(PluginError.FailedToGetPlayerAvatar.errorCode(), it.localizedMessage, null)
+      }
+  }
 }
