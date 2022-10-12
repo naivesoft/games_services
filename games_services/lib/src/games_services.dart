@@ -1,5 +1,5 @@
 import 'dart:async';
-export 'package:games_services_platform_interface/models.dart';
+export 'package:games_services/models.dart';
 import '../games_services.dart';
 
 /// A helper class that has all the library functions in one class.
@@ -110,6 +110,11 @@ class GamesServices {
   /// On iOS the player alias is the name used by the Player visible in the leaderboard
   static Future<String?> getPlayerName() async {
     return await Player.getPlayerName();
+  }
+
+  /// Get the player avatar.
+  static Future<String?> getPlayerAvatar() async {
+    return await Player.getPlayerAvatar();
   }
 
   /// Show the iOS Access Point.

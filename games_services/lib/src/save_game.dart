@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:games_services/src/models/saved_game.dart';
-import 'package:games_services_platform_interface/game_services_platform_interface.dart';
+import 'package:games_services/game_services_platform_interface.dart';
 
 abstract class SaveGame {
   /// Save game with [data] and a unique [name].

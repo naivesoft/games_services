@@ -1,5 +1,5 @@
-import 'package:games_services_platform_interface/game_services_platform_interface.dart';
-import 'package:games_services_platform_interface/models.dart';
+import 'package:games_services/game_services_platform_interface.dart';
+import 'package:games_services/models.dart';
 
 abstract class Player {
   /// Show the iOS Access Point.
@@ -22,6 +22,11 @@ abstract class Player {
   /// On iOS the player alias is the name used by the Player visible in the leaderboard
   static Future<String?> getPlayerName() async {
     return await GamesServicesPlatform.instance.getPlayerName();
+  }
+
+  /// Get the player avatar.
+  static Future<String?> getPlayerAvatar() async {
+    return await GamesServicesPlatform.instance.getPlayerAvatar();
   }
 
   /// Get player score for a specific leaderboard.

@@ -9,4 +9,4 @@ export 'src/models/leaderboard_score_data.dart';
 
 export 'src/games_services.dart';
 
-export 'package:games_services_platform_interface/models.dart';
+export 'models.dart';

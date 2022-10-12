@@ -1,4 +1,4 @@
-import 'package:games_services_platform_interface/game_services_platform_interface.dart';
+import 'package:games_services/game_services_platform_interface.dart';
 
 abstract class GameAuth {
   /// To sign in the user.

@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:games_services_platform_interface/models.dart';
+import 'package:games_services/models.dart';
 import 'src/game_services_platform_impl.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 

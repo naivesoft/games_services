@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:games_services/src/models/achievement_item_data.dart';
-import 'package:games_services_platform_interface/game_services_platform_interface.dart';
-import 'package:games_services_platform_interface/models.dart';
+import 'package:games_services/game_services_platform_interface.dart';
+import 'package:games_services/models.dart';
 
 abstract class Achievements {
   /// It will open the achievements screen.
