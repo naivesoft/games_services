@@ -38,7 +38,7 @@ class Player {
     Games.getPlayersClient(activity, lastSignedInAccount)
       .currentPlayer
       .addOnSuccessListener { player ->
-        result.success(player.hiResImageUri)
+        result.success(player.hiResImageUri.toString())
       }.addOnFailureListener {
         result.error(PluginError.FailedToGetPlayerAvatar.errorCode(), it.localizedMessage, null)
       }
