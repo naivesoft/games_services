@@ -149,6 +149,9 @@ class GamesServicesPlugin : FlutterPlugin,
       Method.GetPlayerAvatar -> {
         player?.getPlayerAvatar(activity, result)
       }
+      Method.GetPlayerIconAvatar -> {
+        player?.getPlayerIconAvatar(activity, result)
+      }
       Method.SaveGame -> {
         val data = call.argument<String>("data") ?: ""
         val name = call.argument<String>("name") ?: ""
