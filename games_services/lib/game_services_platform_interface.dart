@@ -133,6 +133,11 @@ abstract class GamesServicesPlatform extends PlatformInterface {
     throw UnimplementedError("not implemented.");
   }
 
+  /// Get the player photo.
+  Future<String?> getPlayerIconAvatar() async {
+    throw UnimplementedError("not implemented.");
+  }
+
   /// Save game with [data] and a unique [name].
   /// The [name] must be between 1 and 100 non-URL-reserved characters (a-z, A-Z, 0-9, or the symbols "-", ".", "_", or "~").
   Future<String?> saveGame({required String data, required String name}) async {

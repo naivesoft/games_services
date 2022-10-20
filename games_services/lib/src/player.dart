@@ -29,6 +29,11 @@ abstract class Player {
     return await GamesServicesPlatform.instance.getPlayerAvatar();
   }
 
+  /// Get the player icon avatar.
+  static Future<String?> getPlayerIconAvatar() async {
+    return await GamesServicesPlatform.instance.getPlayerIconAvatar();
+  }
+
   /// Get player score for a specific leaderboard.
   static Future<int?> getPlayerScore(
       {iOSLeaderboardID = "", androidLeaderboardID = ""}) async {

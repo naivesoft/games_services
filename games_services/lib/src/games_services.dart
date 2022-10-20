@@ -117,6 +117,11 @@ class GamesServices {
     return await Player.getPlayerAvatar();
   }
 
+  /// Get the player avatar.
+  static Future<String?> getPlayerIconAvatar() async {
+    return await Player.getPlayerIconAvatar();
+  }
+
   /// Show the iOS Access Point.
   static Future<String?> showAccessPoint(AccessPointLocation location) async {
     return await Player.showAccessPoint(location);
